@@ -1,3 +1,9 @@
+'''
+Write a function that receives as parameters two lists a and b and returns:
+(a intersected with b, a reunited with b, a - b, b - a)
+'''
+
+
 def intersection(a, b):
     intersection_list = a.intersection(b)
     return list(intersection_list)
