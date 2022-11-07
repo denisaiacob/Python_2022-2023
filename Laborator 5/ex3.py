@@ -17,6 +17,6 @@ def my_function(s):
 if __name__ == "__main__":
     s = "Programming in Python is fun"
     print(my_function(s))
-    exec("def vowels_function(s):return re.findall(f'[{vowels}]', s, re.I)")
-    print(vowels_function(s))
+    vowelsSearch = lambda string: re.findall(f'[{vowels}]', s, re.I)
+    print(vowelsSearch(s))
     print([i for i in s if i in vowels])
