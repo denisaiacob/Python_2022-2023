@@ -13,5 +13,5 @@ def my_function(*args, **kwargs):
 
 if __name__ == "__main__":
     print(my_function(1, 2, c=3, d=4))
-    exec("def num_sum(*args,**kwargs):return sum(kwargs.values())")
+    num_sum = lambda *args, **kwargs: sum(kwargs.values())
     print(num_sum(1, 2, c=3, d=4))
