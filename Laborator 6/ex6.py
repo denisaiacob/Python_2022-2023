@@ -4,8 +4,6 @@ Censorship means replacing characters from odd positions with *.
 '''
 import re
 
-vowels = "aeiou"
-
 
 def censorship(text):
     words = re.findall("[aeiouAEIOU]\w*[aeiouAEIOU]", text)
